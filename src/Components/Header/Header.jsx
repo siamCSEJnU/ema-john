@@ -9,7 +9,7 @@ function Header() {
       <img src={logo} alt="" />
       <div>
         <Link to="/">shop</Link>
-        <Link to="/order">order</Link>
+        <Link to="/orders">orders</Link>
         <Link to="/inventory">inventory</Link>
         <Link to="/login">Login</Link>
       </div>

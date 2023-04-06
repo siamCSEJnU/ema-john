@@ -5,9 +5,10 @@ import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./Components/Home/Home";
 import Shop from "./Components/Shop/Shop";
-import Order from "./Components/Order/Order";
 import Inventory from "./Components/Inventory/Inventory";
 import Login from "./Components/Login/Login";
+import Orders from "./Components/Orders/Orders";
+import cartProductsLoader from "./loaders/cartProductsLoader";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -18,8 +19,9 @@ const router = createBrowserRouter([
         element: <Shop></Shop>,
       },
       {
-        path: "order",
-        element: <Order></Order>,
+        path: "orders",
+        element: <Orders></Orders>,
+        loader: cartProductsLoader,
       },
       {
         path: "inventory",
