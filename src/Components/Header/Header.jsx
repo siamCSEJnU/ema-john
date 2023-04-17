@@ -12,6 +12,7 @@ function Header() {
         <Link to="/orders">orders</Link>
         <Link to="/inventory">inventory</Link>
         <Link to="/login">Login</Link>
+        <Link to="/signup">Sign Up</Link>
       </div>
     </nav>
   );
